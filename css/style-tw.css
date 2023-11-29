@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /* Fonts  */
   @font-face {
     font-family: "Barlow Semi Condensed";
     src:
@@ -23,6 +24,7 @@
     font-display: swap;
   }
 
+  /* Loader  */
   .loader-wrapper {
     display: flex;
     align-items: center;
@@ -72,6 +74,16 @@
     width: calc(100% - 2rem);
     padding-bottom: calc(100% - 2rem);
     box-shadow: 0 0 0 0 #fff;
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
   }
 
   @keyframes pulsIn {

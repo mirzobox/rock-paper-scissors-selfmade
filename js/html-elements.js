@@ -1,3 +1,5 @@
-const elLoader = document.getElementById("loader");
+const elLoader = document.getElementById("loader"),
+  elRulesModal = document.getElementById("rules"),
+  elShowRulesModalButton = document.getElementById("showRulesModalButton");
 
-export { elLoader };
+export { elLoader, elRulesModal, elShowRulesModalButton };

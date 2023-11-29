@@ -50,6 +50,57 @@
       </div>
     </header>
 
+    <!-- Game zone  -->
+    <section class="pt-16">
+      <h2 class="visually-hidden">Game zone</h2>
+      <div
+        class="bg-path mx-auto grid w-[476px] grid-cols-2 gap-x-[80px] gap-y-6 bg-center bg-no-repeat"
+      >
+        <button
+          class="shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
+        >
+          <img src="img/paper.svg" alt="Paper" width="198" height="203" />
+        </button>
+        <button
+          class="shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
+        >
+          <img src="img/scissors.svg" alt="Scissors" width="198" height="203" />
+        </button>
+        <button
+          class="shadow-drop hover:shadow-hover-shadow col-start-1 col-end-3 h-[203px] w-[198px] place-self-center rounded-full transition-shadow"
+        >
+          <img src="img/rock.svg" alt="Rock" width="198" height="203" />
+        </button>
+      </div>
+    </section>
+
+    <button
+      class="hover:text-dark-blue absolute bottom-8 right-8 min-w-[130px] rounded-[8px] border border-white p-[10px] font-semibold uppercase tracking-[2.5px] text-white transition-all hover:bg-white active:scale-95"
+      id="showRulesModalButton"
+    >
+      Rules
+    </button>
+
+    <!-- Rules  -->
+    <!-- You can open the modal using ID.showModal() method -->
+    <dialog id="rules" class="modal rounded-[8px] p-8">
+      <div class="modal-box w-[400px]">
+        <div class="flex items-center justify-between pb-12">
+          <h3 class="text-dark-blue text-[32px] font-bold uppercase">Rules</h3>
+          <form method="dialog">
+            <button class="btn btn-circle btn-ghost outline-dashed">✕</button>
+          </form>
+        </div>
+        <img
+          class="mx-auto h-[271px] w-[305px] object-contain"
+          src="img/rules.svg"
+          alt="Rules"
+          width="305"
+          height="271"
+        />
+      </div>
+    </dialog>
+
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
