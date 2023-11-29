@@ -27,20 +27,20 @@
 
     <!-- Site header  -->
     <header
-      class="mx-auto w-full max-w-[740px] px-5 py-12 max-[600px]:max-w-full max-[600px]:p-8"
+      class="mx-auto w-full max-w-[740px] px-3 py-10 max-[600px]:max-w-full max-[600px]:p-6"
     >
       <div
-        class="flex items-center justify-between rounded-[15px] border-[3px] border-grey px-6 py-[18px] max-[600px]:rounded-[3px] max-[600px]:p-6"
+        class="flex items-center justify-between rounded-[12px] border-[3px] border-grey px-4 py-[14px] max-[600px]:rounded-[3px] max-[600px]:p-4"
       >
         <img
-          class="h-[93px] w-[156px] object-contain max-[600px]:h-12 max-[600px]:w-[83px]"
+          class="h-[89px] w-[152px] object-contain max-[600px]:h-10 max-[600px]:w-[79px]"
           src="img/logo.svg"
           alt="Site logo"
-          width="156"
-          height="93"
+          width="152"
+          height="89"
         />
         <span
-          class="flex w-[150px] flex-col items-center rounded-[8px] bg-box p-4 shadow-[0px_3px_3px_0px_rgba(0,0,0,0.20)] max-[600px]:w-20 max-[600px]:rounded max-[600px]:p-[10px]"
+          class="flex w-[126px] flex-col items-center rounded-[6px] bg-box p-3 shadow-drop max-[600px]:w-16 max-[600px]:rounded max-[600px]:p-[8px]"
         >
           <span
             class="font-semibold uppercase tracking-[2.5px] text-blue max-[600px]:text-[10px]"
@@ -55,40 +55,58 @@
     </header>
 
     <!-- Game zone  -->
-    <section class="pt-16 max-[600px]:pt-[105px]" id="gameZone">
+    <section class="pt-10 max-[600px]:pt-[75px]" id="gameZone">
       <h2 class="visually-hidden">Game zone</h2>
       <div
-        class="max-[600px]:bg-path-small mx-auto grid w-full max-w-[476px] grid-cols-2 gap-x-[80px] gap-y-6 bg-path bg-center bg-no-repeat max-[600px]:max-w-[312px] max-[600px]:gap-x-[50px] max-[600px]:gap-y-[15px]"
+        class="mx-auto grid w-full max-w-[476px] grid-cols-2 gap-x-[80px] gap-y-6 bg-path bg-center bg-no-repeat max-[600px]:max-w-[312px] max-[600px]:gap-x-[50px] max-[600px]:gap-y-[15px] max-[600px]:bg-path-small"
       >
         <button
-          class="js-hand h-[203px] w-[198px] rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px] max-[600px]:place-self-center"
+          class="js-hand max-[1400]:h-[173px] max-[1400]:w-[168px] max-[600px]:h-[133px] max-[600px]:w-[130px] max-[600px]:place-self-center h-[203px] w-[198px] rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow"
         >
-          <img src="img/paper.svg" alt="paper" width="198" height="203" />
+          <img
+            class="h-full w-full"
+            src="img/paper.svg"
+            alt="paper"
+            width="168"
+            height="173"
+          />
         </button>
         <button
-          class="js-hand h-[203px] w-[198px] rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px] max-[600px]:place-self-center"
+          class="js-hand max-[1400]:h-[173px] max-[1400]:w-[168px] max-[600px]:h-[133px] max-[600px]:w-[130px] max-[600px]:place-self-center h-[203px] w-[198px] rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow"
         >
-          <img src="img/scissors.svg" alt="scissors" width="198" height="203" />
+          <img
+            class="h-full w-full"
+            src="img/scissors.svg"
+            alt="scissors"
+            width="168"
+            height="173"
+          />
         </button>
         <button
-          class="js-hand col-start-1 col-end-3 h-[203px] w-[198px] place-self-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"
+          class="js-hand max-[1400]:h-[173px] max-[1400]:w-[168px] max-[600px]:h-[133px] max-[600px]:w-[130px] col-start-1 col-end-3 h-[203px] w-[198px] place-self-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow"
         >
-          <img src="img/rock.svg" alt="rock" width="198" height="203" />
+          <img
+            class="h-full w-full"
+            src="img/rock.svg"
+            alt="rock"
+            width="168"
+            height="173"
+          />
         </button>
       </div>
     </section>
 
     <!-- Process  -->
-    <section class="hidden pt-[72px] max-[600px]:pt-[99px]" id="process">
-      <div class="flex items-center gap-[106px] max-[600px]:gap-[50px]">
+    <section class="max-[600px]:pt-[69px] hidden pt-[42px]" id="process">
+      <div class="max-[600px]:gap-[50px] flex items-center gap-[106px]">
         <div class="ml-auto flex flex-col items-center">
           <h3
-            class="mb-[63px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px]"
+            class="max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px] mb-[63px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white"
           >
             You picked
           </h3>
           <img
-            class="h-[300px] w-[293px] object-contain max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px]"
+            class="max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px] h-[300px] w-[293px] object-contain"
             id="userHand"
             src=""
             alt="User hand"
@@ -96,12 +114,12 @@
         </div>
         <div class="mr-auto flex flex-col items-center">
           <h3
-            class="mb-[63px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px]"
+            class="max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px] mb-[63px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white"
           >
             The house picked
           </h3>
           <img
-            class="h-[300px] w-[293px] object-contain max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px]"
+            class="max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px] h-[300px] w-[293px] object-contain"
             id="aiHand"
             src="img/oval.svg"
             alt="AI hand"
@@ -112,7 +130,7 @@
 
     <!-- Rules button  -->
     <button
-      class="absolute bottom-8 right-8 min-w-[130px] max-w-[130px] rounded-[8px] border border-white p-[10px] font-semibold uppercase tracking-[2.5px] text-white transition-all hover:bg-white hover:text-dark-blue active:scale-95 max-[600px]:bottom-14 max-[600px]:left-2/4 max-[600px]:-translate-x-2/4"
+      class="max-[600px]:bottom-14 max-[600px]:left-2/4 max-[600px]:-translate-x-2/4 absolute bottom-8 right-8 min-w-[130px] max-w-[130px] rounded-[8px] border border-white p-[10px] font-semibold uppercase tracking-[2.5px] text-white transition-all hover:bg-white hover:text-dark-blue active:scale-95"
       id="showRulesModalButton"
     >
       Rules
@@ -120,21 +138,21 @@
 
     <!-- Rules  -->
     <!-- You can open the modal using ID.showModal() method -->
-    <dialog id="rules" class="modal max-[600px]:max-h-full">
+    <dialog id="rules" class="max-[600px]:max-h-full modal">
       <div
-        class="modal-box w-[400px] rounded-[8px] p-8 max-[600px]:h-full max-[600px]:max-h-full max-[600px]:w-full max-[600px]:max-w-full max-[600px]:rounded-none max-[600px]:px-[35px] max-[600px]:pt-[95px]"
+        class="max-[600px]:h-full max-[600px]:max-h-full max-[600px]:w-full max-[600px]:rounded-none max-[600px]:px-[35px] max-[600px]:pt-[95px] modal-box w-[400px] rounded-[8px] p-8 max-[600px]:max-w-full"
       >
         <div
-          class="flex items-center justify-between pb-12 max-[600px]:block max-[600px]:pb-[113px]"
+          class="max-[600px]:block max-[600px]:pb-[113px] flex items-center justify-between pb-12"
         >
           <h3
-            class="text-[32px] font-bold uppercase text-dark-blue max-[600px]:text-center"
+            class="max-[600px]:text-center text-[32px] font-bold uppercase text-dark-blue"
           >
             Rules
           </h3>
           <form method="dialog">
             <button
-              class="max-[600px]:active::-translate-x-2/4 btn btn-circle btn-ghost outline-dashed max-[600px]:absolute max-[600px]:bottom-[66px] max-[600px]:left-2/4"
+              class="max-[600px]:absolute max-[600px]:bottom-[66px] max-[600px]:left-2/4 max-[600px]:-translate-x-2/4 max-[600px]:active:-translate-x-2/4 btn btn-circle btn-ghost outline-dashed"
             >
               <img
                 class="h-5 w-5 object-contain"
