@@ -2,10 +2,19 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      barlow: ["Barlow Semi Condensed", "Arial", "sans-serif"],
+    },
+    colors: {
+      grey: "rgba(255, 255, 255, 0.29)",
+      blue: "#2a45c2",
+      "dark-blue": "#565468",
+    },
     extend: {
       backgroundImage: {
         gradient:
           "radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%)",
+        box: "linear-gradient(0deg, #F3F3F3 0%, #FFF 100%)",
       },
     },
   },
