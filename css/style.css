@@ -8379,6 +8379,10 @@ details.collapse summary::-webkit-details-marker {
   clear: none;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -10094,6 +10098,11 @@ details.collapse summary::-webkit-details-marker {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-yellow-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
