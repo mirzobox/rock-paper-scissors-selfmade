@@ -51,26 +51,58 @@
     </header>
 
     <!-- Game zone  -->
-    <section class="pt-16">
+    <section class="pt-16" id="gameZone">
       <h2 class="visually-hidden">Game zone</h2>
       <div
         class="bg-path mx-auto grid w-[476px] grid-cols-2 gap-x-[80px] gap-y-6 bg-center bg-no-repeat"
       >
         <button
-          class="shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
+          class="js-hand shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
         >
-          <img src="img/paper.svg" alt="Paper" width="198" height="203" />
+          <img src="img/paper.svg" alt="paper" width="198" height="203" />
         </button>
         <button
-          class="shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
+          class="js-hand shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
         >
-          <img src="img/scissors.svg" alt="Scissors" width="198" height="203" />
+          <img src="img/scissors.svg" alt="scissors" width="198" height="203" />
         </button>
         <button
-          class="shadow-drop hover:shadow-hover-shadow col-start-1 col-end-3 h-[203px] w-[198px] place-self-center rounded-full transition-shadow"
+          class="js-hand shadow-drop hover:shadow-hover-shadow col-start-1 col-end-3 h-[203px] w-[198px] place-self-center rounded-full transition-shadow"
         >
-          <img src="img/rock.svg" alt="Rock" width="198" height="203" />
+          <img src="img/rock.svg" alt="rock" width="198" height="203" />
         </button>
+      </div>
+    </section>
+
+    <!-- Process  -->
+    <section class="hidden" id="process">
+      <div class="flex items-center gap-[106px]">
+        <div class="ml-auto flex flex-col items-center">
+          <h3
+            class="mb-[63px] text-[24px] uppercase leading-[32px] tracking-[3px] text-white"
+          >
+            You picked
+          </h3>
+          <img
+            class="h-[300px] w-[293px] object-contain"
+            id="userHand"
+            src=""
+            alt="User hand"
+          />
+        </div>
+        <div class="mr-auto flex flex-col items-center">
+          <h3
+            class="mb-[63px] text-[24px] uppercase leading-[32px] tracking-[3px] text-white"
+          >
+            The house picked
+          </h3>
+          <img
+            class="h-[300px] w-[293px] object-contain"
+            id="aiHand"
+            src="img/oval.svg"
+            alt="AI hand"
+          />
+        </div>
       </div>
     </section>
 
