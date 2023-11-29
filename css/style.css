@@ -9342,6 +9342,25 @@ details.collapse summary::-webkit-details-marker {
   row-gap: 1.5rem;
 }
 
+.gap-x-\[50px\] {
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-x-\[40px\] {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -9863,6 +9882,26 @@ details.collapse summary::-webkit-details-marker {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-\[center_top_1rem\] {
+  background-position: center top 1rem;
+}
+
+.bg-\[center_top_5rem\] {
+  background-position: center top 5rem;
+}
+
+.bg-\[center_top_3rem\] {
+  background-position: center top 3rem;
+}
+
+.bg-\[center_top_4rem\] {
+  background-position: center top 4rem;
 }
 
 .bg-repeat {
