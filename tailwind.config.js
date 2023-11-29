@@ -18,6 +18,7 @@ module.exports = {
       },
       backgroundImage: {
         path: "url('/img/path.svg')",
+        "path-small": "url('/img/path-small.svg')",
         gradient:
           "radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%)",
         box: "linear-gradient(0deg, #F3F3F3 0%, #FFF 100%)",

@@ -19,31 +19,35 @@
     <!-- Style  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="font-barlow h-full bg-gradient">
+  <body class="h-full bg-gradient font-barlow">
     <!-- Loader  -->
     <div class="loader-wrapper" id="loader">
       <span class="loader"></span>
     </div>
 
     <!-- Site header  -->
-    <header class="mx-auto w-full max-w-[740px] px-5 py-12">
+    <header
+      class="mx-auto w-full max-w-[740px] px-5 py-12 max-[600px]:max-w-full max-[600px]:p-8"
+    >
       <div
-        class="border-grey flex items-center justify-between rounded-[15px] border-[3px] px-6 py-[18px]"
+        class="flex items-center justify-between rounded-[15px] border-[3px] border-grey px-6 py-[18px] max-[600px]:rounded-[3px] max-[600px]:p-6"
       >
         <img
-          class="h-[93px] w-[156px] object-contain"
+          class="h-[93px] w-[156px] object-contain max-[600px]:h-12 max-[600px]:w-[83px]"
           src="img/logo.svg"
           alt="Site logo"
           width="156"
           height="93"
         />
         <span
-          class="bg-box flex min-w-[150px] flex-col items-center rounded-[8px] p-4 shadow-[0px_3px_3px_0px_rgba(0,0,0,0.20)]"
+          class="flex w-[150px] flex-col items-center rounded-[8px] bg-box p-4 shadow-[0px_3px_3px_0px_rgba(0,0,0,0.20)] max-[600px]:w-20 max-[600px]:rounded max-[600px]:p-[10px]"
         >
-          <span class="text-blue font-semibold uppercase tracking-[2.5px]"
+          <span
+            class="font-semibold uppercase tracking-[2.5px] text-blue max-[600px]:text-[10px]"
             >Score</span
           >
-          <span class="text-dark-blue text-[64px] font-bold leading-none"
+          <span
+            class="text-[64px] font-bold leading-none text-dark-blue max-[600px]:text-[40px]"
             >12</span
           >
         </span>
@@ -51,23 +55,23 @@
     </header>
 
     <!-- Game zone  -->
-    <section class="pt-16" id="gameZone">
+    <section class="pt-16 max-[600px]:pt-[105px]" id="gameZone">
       <h2 class="visually-hidden">Game zone</h2>
       <div
-        class="bg-path mx-auto grid w-[476px] grid-cols-2 gap-x-[80px] gap-y-6 bg-center bg-no-repeat"
+        class="max-[600px]:bg-path-small mx-auto grid w-full max-w-[476px] grid-cols-2 gap-x-[80px] gap-y-6 bg-path bg-center bg-no-repeat max-[600px]:max-w-[312px] max-[600px]:gap-x-[50px] max-[600px]:gap-y-[15px]"
       >
         <button
-          class="js-hand shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
+          class="js-hand h-[203px] w-[198px] rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px] max-[600px]:place-self-center"
         >
           <img src="img/paper.svg" alt="paper" width="198" height="203" />
         </button>
         <button
-          class="js-hand shadow-drop hover:shadow-hover-shadow h-[203px] w-[198px] rounded-full transition-shadow"
+          class="js-hand h-[203px] w-[198px] rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px] max-[600px]:place-self-center"
         >
           <img src="img/scissors.svg" alt="scissors" width="198" height="203" />
         </button>
         <button
-          class="js-hand shadow-drop hover:shadow-hover-shadow col-start-1 col-end-3 h-[203px] w-[198px] place-self-center rounded-full transition-shadow"
+          class="js-hand col-start-1 col-end-3 h-[203px] w-[198px] place-self-center rounded-full shadow-drop transition-shadow hover:shadow-hover-shadow max-[600px]:h-[133px] max-[600px]:w-[130px]"
         >
           <img src="img/rock.svg" alt="rock" width="198" height="203" />
         </button>
@@ -75,16 +79,16 @@
     </section>
 
     <!-- Process  -->
-    <section class="hidden" id="process">
-      <div class="flex items-center gap-[106px]">
+    <section class="hidden pt-[72px] max-[600px]:pt-[99px]" id="process">
+      <div class="flex items-center gap-[106px] max-[600px]:gap-[50px]">
         <div class="ml-auto flex flex-col items-center">
           <h3
-            class="mb-[63px] text-[24px] uppercase leading-[32px] tracking-[3px] text-white"
+            class="mb-[63px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px]"
           >
             You picked
           </h3>
           <img
-            class="h-[300px] w-[293px] object-contain"
+            class="h-[300px] w-[293px] object-contain max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px]"
             id="userHand"
             src=""
             alt="User hand"
@@ -92,12 +96,12 @@
         </div>
         <div class="mr-auto flex flex-col items-center">
           <h3
-            class="mb-[63px] text-[24px] uppercase leading-[32px] tracking-[3px] text-white"
+            class="mb-[63px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px]"
           >
             The house picked
           </h3>
           <img
-            class="h-[300px] w-[293px] object-contain"
+            class="h-[300px] w-[293px] object-contain max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px]"
             id="aiHand"
             src="img/oval.svg"
             alt="AI hand"
@@ -106,8 +110,9 @@
       </div>
     </section>
 
+    <!-- Rules button  -->
     <button
-      class="hover:text-dark-blue absolute bottom-8 right-8 min-w-[130px] rounded-[8px] border border-white p-[10px] font-semibold uppercase tracking-[2.5px] text-white transition-all hover:bg-white active:scale-95"
+      class="absolute bottom-8 right-8 min-w-[130px] max-w-[130px] rounded-[8px] border border-white p-[10px] font-semibold uppercase tracking-[2.5px] text-white transition-all hover:bg-white hover:text-dark-blue active:scale-95 max-[600px]:bottom-14 max-[600px]:left-2/4 max-[600px]:-translate-x-2/4"
       id="showRulesModalButton"
     >
       Rules
@@ -115,12 +120,28 @@
 
     <!-- Rules  -->
     <!-- You can open the modal using ID.showModal() method -->
-    <dialog id="rules" class="modal rounded-[8px] p-8">
-      <div class="modal-box w-[400px]">
-        <div class="flex items-center justify-between pb-12">
-          <h3 class="text-dark-blue text-[32px] font-bold uppercase">Rules</h3>
+    <dialog id="rules" class="modal max-[600px]:max-h-full">
+      <div
+        class="modal-box w-[400px] rounded-[8px] p-8 max-[600px]:h-full max-[600px]:max-h-full max-[600px]:w-full max-[600px]:max-w-full max-[600px]:rounded-none max-[600px]:px-[35px] max-[600px]:pt-[95px]"
+      >
+        <div
+          class="flex items-center justify-between pb-12 max-[600px]:block max-[600px]:pb-[113px]"
+        >
+          <h3
+            class="text-[32px] font-bold uppercase text-dark-blue max-[600px]:text-center"
+          >
+            Rules
+          </h3>
           <form method="dialog">
-            <button class="btn btn-circle btn-ghost outline-dashed">✕</button>
+            <button
+              class="max-[600px]:active::-translate-x-2/4 btn btn-circle btn-ghost outline-dashed max-[600px]:absolute max-[600px]:bottom-[66px] max-[600px]:left-2/4"
+            >
+              <img
+                class="h-5 w-5 object-contain"
+                src="img/x.svg"
+                alt="Close button"
+              />
+            </button>
           </form>
         </div>
         <img
