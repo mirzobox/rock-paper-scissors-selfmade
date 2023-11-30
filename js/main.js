@@ -43,5 +43,6 @@ elRefreshGameButton.onclick = () => {
   // Remove winner shadow
   elUserHand.classList.remove(winShadow);
   elAiHand.classList.remove(winShadow);
+  elAiHand.src = origin + elAiHand.dataset.oval;
   setProcess(false);
 };
