@@ -7,7 +7,7 @@ const setProcess = (value) => {
     elGameZone.classList.add(hidden);
     elProcess.classList.remove(hidden);
   } else {
-    elGameZone.remove(hidden);
+    elGameZone.classList.remove(hidden);
     elProcess.classList.add(hidden);
   }
 };

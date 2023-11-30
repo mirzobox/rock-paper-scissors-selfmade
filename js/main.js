@@ -1,7 +1,12 @@
+import cssClassModifiers from "./css-class-modifiers.js";
 import {
+  elAiHand,
   elHands,
+  elRefreshGameButton,
+  elRefreshGameWindow,
   elRulesModal,
   elShowRulesModalButton,
+  elUserHand,
 } from "./html-elements.js";
 import loader from "./loader.js";
 import setProcess from "./set-process.js";
@@ -28,3 +33,15 @@ elHands.forEach((hand) => {
     setProcess(true);
   };
 });
+
+// Refresh game
+elRefreshGameButton.onclick = () => {
+  const { hidden, flex, winShadow } = cssClassModifiers;
+  elRefreshGameWindow.classList.remove(flex);
+  elRefreshGameWindow.classList.add(hidden);
+
+  // Remove winner shadow
+  elUserHand.classList.remove(winShadow);
+  elAiHand.classList.remove(winShadow);
+  setProcess(false);
+};

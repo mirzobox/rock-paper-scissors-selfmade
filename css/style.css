@@ -8618,6 +8618,18 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.5rem;
 }
 
+.ml-14 {
+  margin-left: 3.5rem;
+}
+
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -8793,6 +8805,14 @@ details.collapse summary::-webkit-details-marker {
   min-width: 130px;
 }
 
+.min-w-\[220px\] {
+  min-width: 220px;
+}
+
+.min-w-\[253px\] {
+  min-width: 253px;
+}
+
 .max-w-\[130px\] {
   max-width: 130px;
 }
@@ -8811,6 +8831,10 @@ details.collapse summary::-webkit-details-marker {
 
 .shrink {
   flex-shrink: 1;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -8843,6 +8867,12 @@ details.collapse summary::-webkit-details-marker {
 
 .border-separate {
   border-collapse: separate;
+}
+
+.scale-0 {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform {
@@ -9650,6 +9680,10 @@ details.collapse summary::-webkit-details-marker {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -9790,6 +9824,11 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-box {
@@ -9934,6 +9973,10 @@ details.collapse summary::-webkit-details-marker {
   padding: 10px;
 }
 
+.p-\[15px\] {
+  padding: 15px;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -10036,6 +10079,10 @@ details.collapse summary::-webkit-details-marker {
 
 .text-\[64px\] {
   font-size: 64px;
+}
+
+.text-\[56px\] {
+  font-size: 56px;
 }
 
 .font-bold {
@@ -10473,6 +10520,12 @@ details.collapse summary::-webkit-details-marker {
 
 .transition-shadow {
   transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }

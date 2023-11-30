@@ -6,7 +6,10 @@ const elLoader = document.getElementById("loader"),
   elUserHand = document.getElementById("userHand"),
   elAiHand = document.getElementById("aiHand"),
   elHands = document.querySelectorAll(".js-hand"),
-  elScore = document.getElementById("score");
+  elScore = document.getElementById("score"),
+  elRefreshGameWindow = document.getElementById("refreshGameWindow"),
+  elStatus = document.getElementById("status"),
+  elRefreshGameButton = document.getElementById("refreshGameButton");
 
 export {
   elLoader,
@@ -18,4 +21,7 @@ export {
   elAiHand,
   elHands,
   elScore,
+  elRefreshGameWindow,
+  elStatus,
+  elRefreshGameButton,
 };
