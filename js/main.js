@@ -36,13 +36,13 @@ elHands.forEach((hand) => {
 
 // Refresh game
 elRefreshGameButton.onclick = () => {
-  const { hidden, flex, winShadow } = cssClassModifiers;
+  const { hidden, flex, winShadow, winShadowSmall } = cssClassModifiers;
   elRefreshGameWindow.classList.remove(flex);
   elRefreshGameWindow.classList.add(hidden);
 
   // Remove winner shadow
-  elUserHand.classList.remove(winShadow);
-  elAiHand.classList.remove(winShadow);
+  elUserHand.classList.remove(winShadow, winShadowSmall);
+  elAiHand.classList.remove(winShadow, winShadowSmall);
   elAiHand.src = origin + elAiHand.dataset.oval;
   setProcess(false);
 };

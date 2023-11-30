@@ -17,6 +17,8 @@ module.exports = {
         "hover-shadow": "0px 0px 0px 24px rgba(255, 255, 255, 0.05)",
         "win-shadow":
           "0px 0px 0px 50px rgba(255, 255, 255, 0.05), 0px 0px 0px 100px rgba(255, 255, 255, 0.05), 0px 0px 0px 150px rgba(255, 255, 255, 0.05)",
+        "win-shadow-small":
+          "0px 0px 0px 30px rgba(255, 255, 255, 0.05), 0px 0px 0px 60px rgba(255, 255, 255, 0.05), 0px 0px 0px 90px rgba(255, 255, 255, 0.05)",
       },
       backgroundImage: {
         path: "url('/img/path.svg')",

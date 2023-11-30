@@ -101,14 +101,16 @@
     <section class="hidden pt-8 max-[600px]:pt-[50px]" id="process">
       <div class="flex items-center max-[600px]:gap-[50px]">
         <!-- User  -->
-        <div class="ml-auto mr-14 flex flex-col items-center">
+        <div
+          class="ml-auto mr-14 flex flex-col items-center max-[700px]:mr-8 max-[450px]:mr-0"
+        >
           <h3
             class="mb-[43px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px]"
           >
             You picked
           </h3>
           <img
-            class="h-[260px] min-w-[253px] rounded-full object-contain transition-shadow max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px]"
+            class="h-[260px] min-w-[253px] rounded-full object-contain transition-shadow max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:min-w-[130px]"
             id="userHand"
             src=""
             alt="User hand"
@@ -116,7 +118,10 @@
         </div>
 
         <!-- Play again  -->
-        <div class="hidden flex-col items-center" id="refreshGameWindow">
+        <div
+          class="hidden flex-col items-center max-[900px]:absolute max-[900px]:bottom-[100px] max-[900px]:left-2/4 max-[900px]:-translate-x-2/4 max-[600px]:bottom-[150px]"
+          id="refreshGameWindow"
+        >
           <h2
             class="mb-4 text-[56px] font-bold uppercase text-white"
             id="status"
@@ -132,14 +137,16 @@
         </div>
 
         <!-- Robot  -->
-        <div class="ml-14 mr-auto flex flex-col items-center">
+        <div
+          class="ml-14 mr-auto flex flex-col items-center max-[700px]:ml-8 max-[450px]:ml-0"
+        >
           <h3
             class="mb-[43px] whitespace-nowrap text-[24px] uppercase leading-[32px] tracking-[3px] text-white max-[600px]:mb-0 max-[600px]:mt-[17px] max-[600px]:text-[15px]"
           >
             The house picked
           </h3>
           <img
-            class="h-[260px] min-w-[253px] rounded-full object-contain transition-shadow max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:w-[130px]"
+            class="h-[260px] min-w-[253px] rounded-full object-contain transition-shadow max-[600px]:-order-1 max-[600px]:h-[133px] max-[600px]:min-w-[130px]"
             id="aiHand"
             data-oval="/img/oval.svg"
             src="img/oval.svg"

@@ -6,7 +6,7 @@ import refreshGame from "./refresh-game.js";
 import scoreUpdater from "./score-updater.js";
 
 const checkWinner = (userHand, aiHand) => {
-  const { winShadow } = cssClassModifiers;
+  const { winShadow, smallScreenSize, winShadowSmall } = cssClassModifiers;
   if (userHand === aiHand) {
     refreshGame();
   } else {
@@ -15,11 +15,14 @@ const checkWinner = (userHand, aiHand) => {
       (userHand === scissors && aiHand === paper) ||
       (userHand === rock && aiHand === scissors)
     ) {
-      elUserHand.classList.add(winShadow);
+      if (innerWidth <= smallScreenSize)
+        elUserHand.classList.add(winShadowSmall);
+      else elUserHand.classList.add(winShadow);
       scoreUpdater(user, 1, "+");
       refreshGame(user);
     } else {
-      elAiHand.classList.add(winShadow);
+      if (innerWidth <= smallScreenSize) elAiHand.classList.add(winShadowSmall);
+      else elAiHand.classList.add(winShadow);
       scoreUpdater(ai, 1, "-");
       refreshGame(ai);
     }
