@@ -5,7 +5,8 @@ const elLoader = document.getElementById("loader"),
   elProcess = document.getElementById("process"),
   elUserHand = document.getElementById("userHand"),
   elAiHand = document.getElementById("aiHand"),
-  elHands = document.querySelectorAll(".js-hand");
+  elHands = document.querySelectorAll(".js-hand"),
+  elScore = document.getElementById("score");
 
 export {
   elLoader,
@@ -16,4 +17,5 @@ export {
   elUserHand,
   elAiHand,
   elHands,
+  elScore,
 };
